@@ -1,0 +1,305 @@
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("fonts/Gilroy.ttf");
+  font-family: DotGothic16;
+  src: url("fonts/DotGothic16-Regular.ttf");
+}
+@font-face {
+  font-family: Gilroy;
+  src: url("fonts/Gilroy.ttf");
+}
+body {
+  width: auto;
+  background-color: #031923;
+}
+
+.hero_section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-image: url("hero_bg.png");
+  background-size: cover;
+}
+
+.Header {
+  height: 112px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 0 24px 0 24px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  box-sizing: border-box;
+  color: #00FFA3;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.navbar-light .navbar-toggler {
+  color: #ffffff;
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+.navbar {
+  padding: 8px 120px 7px 128px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.h1_hero {
+  font-family: DotGothic16;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 84px;
+  letter-spacing: -0.25em;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27%;
+}
+
+.h2_hero {
+  align-items: flex-end;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.button_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.button_book {
+  background: linear-gradient(#00D8A4, #009470);
+  width: 286px;
+  height: 59px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
+  border-radius: 20px 4px;
+}
+
+.tittle_carts, .tittle_booking {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.tittle_carts_h1, .tittle_booking_h1 {
+  font-family: "DotGothic16";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 209px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.1;
+  margin-left: 120px;
+}
+
+.title_fastest, .tittle_book {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: auto;
+  padding-bottom: 25px;
+}
+
+.title_fastest h3, .tittle_book h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: right;
+  letter-spacing: 0.25em;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+
+.fastest_carts, .book_booking {
+  font-family: "DotGothic16";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 84px;
+  text-align: center;
+  letter-spacing: -0.25em;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  margin-right: 121px;
+}
+
+.carts_line, .booking_line {
+  width: 219px;
+  border-top: 2px solid #FFFFFF;
+  padding-bottom: 9px;
+}
+
+@media (max-width: 990px) {
+  .tittle_carts {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .tittle_carts_h1 {
+    margin-left: 0px;
+  }
+}
+.carst_img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.carst_img img {
+  display: flex;
+  width: 100%;
+}
+
+.carst_img h1 {
+  font-family: "DotGothic16";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: -0.25em;
+  color: #FFFFFF;
+}
+
+.adult_cart h1 {
+  text-align: right;
+  margin-right: 47px;
+}
+
+.adult_cart h2 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-right: 47px;
+}
+
+.adult_cart h3 p {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: right;
+  color: #FFFFFF;
+  margin-right: 47px;
+}
+
+.child_cart h1 {
+  margin-top: 62px;
+}
+
+.for_two_cart h1 {
+  margin-top: 20px;
+}
+
+@media (max-width: 990px) {
+  .carst_img {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.booking {
+  background-image: url("booking_bg.png");
+}
+
+.tittle_booking {
+  flex-direction: row;
+}
+
+.tittle_book {
+  margin-left: 121px;
+  margin-right: auto;
+}
+
+.book_booking {
+  margin-right: 8px;
+}
+
+.tittle_booking_h1 {
+  margin-left: 0;
+  margin-right: 121px;
+}
+
+.tittle_book h3 {
+  margin-left: 22px;
+}
+
+.booking_line {
+  width: 120px;
+}
+
+@media (max-width: 1400px) {
+  .tittle_booking {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .tittle_booking_h1 {
+    margin-right: 0px;
+  }
+  .tittle_book {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .tittle_book h3 {
+    margin-left: 0px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
