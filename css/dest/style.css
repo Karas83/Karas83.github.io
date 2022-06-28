@@ -11,13 +11,13 @@
 
 @font-face {
   font-family: Gilroy;
-  src: url("fonts/Gilroy.ttf");
+  src: url("../../fonts/Gilroy.ttf");
   font-family: DotGothic16;
-  src: url("fonts/DotGothic16-Regular.ttf");
+  src: url("../../fonts/DotGothic16-Regular.ttf");
 }
 @font-face {
   font-family: Gilroy;
-  src: url("fonts/Gilroy.ttf");
+  src: url("../../fonts/Gilroy.ttf");
 }
 body {
   background-color: #031923;
@@ -32,7 +32,7 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  background-image: url("hero_bg.png");
+  background-image: url("../../img/hero_bg.png");
   background-size: cover;
 }
 
@@ -57,6 +57,7 @@ body {
   color: #ffffff;
   border-color: #ffffff;
   background-color: #ffffff;
+  z-index: 1;
 }
 
 .navbar {
@@ -266,7 +267,7 @@ body {
   }
 }
 .booking {
-  background-image: url("booking_bg.png");
+  background-image: url("../../img/booking_bg.png");
   background-size: cover;
 }
 
@@ -405,7 +406,7 @@ body {
 .features {
   display: flex;
   flex-direction: column;
-  background-image: url(f_bg.png);
+  background-image: url(../../img/f_bg.png);
   background-size: cover;
 }
 
@@ -532,7 +533,7 @@ body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-image: url(footer_bg.png);
+  background-image: url(../../img/footer_bg.png);
   background-size: cover;
   margin-top: 100px;
 }
@@ -541,6 +542,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
+  margin-bottom: 100px;
 }
 
 .footer_content p {
