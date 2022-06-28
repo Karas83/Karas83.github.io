@@ -20,8 +20,12 @@
   src: url("fonts/Gilroy.ttf");
 }
 body {
-  width: auto;
   background-color: #031923;
+  box-sizing: border-box;
+}
+
+.Header {
+  height: 112px;
 }
 
 .hero_section {
@@ -30,10 +34,6 @@ body {
   flex-direction: column;
   background-image: url("hero_bg.png");
   background-size: cover;
-}
-
-.Header {
-  height: 112px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -51,8 +51,6 @@ body {
   box-sizing: border-box;
   color: #00FFA3;
   font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .navbar-light .navbar-toggler {
@@ -187,6 +185,16 @@ body {
   .tittle_carts_h1 {
     margin-left: 0px;
   }
+  .title_fastest, .fastest_carts {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .title_fastest {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
 .carst_img {
   display: flex;
@@ -227,7 +235,7 @@ body {
   margin-right: 47px;
 }
 
-.adult_cart h3 p {
+.adult_cart h3, .track_info {
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 400;
@@ -236,6 +244,11 @@ body {
   text-align: right;
   color: #FFFFFF;
   margin-right: 47px;
+  margin-top: 23px;
+}
+
+.adult_cart p {
+  margin-bottom: 0px;
 }
 
 .child_cart h1 {
@@ -254,6 +267,7 @@ body {
 }
 .booking {
   background-image: url("booking_bg.png");
+  background-size: cover;
 }
 
 .tittle_booking {
@@ -263,6 +277,7 @@ body {
 .tittle_book {
   margin-left: 121px;
   margin-right: auto;
+  padding-bottom: 33px;
 }
 
 .book_booking {
@@ -272,6 +287,7 @@ body {
 .tittle_booking_h1 {
   margin-left: 0;
   margin-right: 121px;
+  padding-bottom: 8px;
 }
 
 .tittle_book h3 {
@@ -300,6 +316,160 @@ body {
   .tittle_book h3 {
     margin-left: 0px;
   }
+}
+.track_info {
+  text-align: left;
+  margin-left: 121px;
+  margin-top: 0px;
+}
+
+.track_info p {
+  margin-bottom: 0px;
+}
+
+.track_info_p1 {
+  padding-bottom: 20px;
+}
+
+.track_info_tittle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 46px;
+  color: #00FFA3;
+  margin-left: 121px;
+}
+
+.book_track {
+  margin-top: 31px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 167px;
+}
+
+.button_track_box {
+  width: 35%;
+}
+
+.track_info_sec, .track_info_metre {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.track_info_sec p {
+  margin-left: 98px;
+}
+
+.track_info_metre p {
+  margin-right: 0px;
+}
+
+@media (max-width: 1400px) {
+  .book_track {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0px;
+  }
+  .track_info_tittle, .track_info, .track_info_sec p {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.features_tittle {
+  margin-bottom: 49px;
+}
+
+@media (max-width: 1515px) {
+  .features_tittle {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .features_tittle_h1 {
+    margin-left: 0px;
+  }
+  .our_tittle, .prop_tittle {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .our_tittle {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  background-image: url(f_bg.png);
+  background-size: cover;
+}
+
+.features_items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.features_item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 513px;
+  height: 178px;
+  padding: 37px 20px 45px 37px;
+  margin-bottom: 46px;
+}
+
+.features_item {
+  position: relative;
+  background: #031822;
+  border-radius: 16px;
+}
+
+.features_item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -2px;
+  border-radius: inherit;
+  background-image: linear-gradient(0deg, #009470, #00D8A4);
+}
+
+.features_item img {
+  width: 100px;
+  height: 96px;
+}
+
+.features_item_tittle {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: left;
+  color: #FFFFFF;
+  margin-left: 25px;
+}
+
+.features_item_text {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  margin-left: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
