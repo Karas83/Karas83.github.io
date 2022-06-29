@@ -2,6 +2,7 @@
 <html lang="en,ru">
 
 <head>
+  <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
   <meta charset="UTF-8">
   <title>BatumiKartingClub</title>
   <meta name="viewport"
@@ -21,18 +22,6 @@
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-
   <div id="myModal1" class="modal fade">
     <div class="modal-dialog modal-dialog-centered modal-sm">
       <div class="modal-content">
@@ -184,8 +173,6 @@
         <h2 class="fastest_carts">Карты</h2>
       </div>
     </div>
-
-
     <div class=" swiper mySwiper" style="padding-top:50px;padding-bottom: 10%;">
       <div class="swiper-wrapper">
         <div class=" swiper-slide">
@@ -199,19 +186,14 @@
                 <p>Удовольствие от вождения гоночного автомобиля в ваших руках.</p>
                 <p>Ограничения: по росту - от 150 см., по весу - до 115 кг.</p>
               </h3>
-
             </div>
-
           </div>
-
         </div>
         <div class=" swiper-slide">
           <div class="swiper-zoom-container">
-
             <div class="adult_cart carst_img swiper-zoom-target">
               <img src="img/cart_det.png">
               <h1>Детский</h1>
-
             </div>
           </div>
         </div>
@@ -221,25 +203,17 @@
               <img src="img/cart_dvm.png">
               <h1>Двухместный</h1>
             </div>
-
           </div>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
     </div>
-
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
     <script>
-
-
-
       var swiper = new Swiper(".mySwiper", {
         centeredSlides: true,
         zoom: true,
-
         slidesPerView: 3,
         spaceBetween: 30,
         slidesPerGroup: 1,
@@ -253,31 +227,19 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
         },
-
         zoom: {
           maxRatio: 1.2,
           minRatio: 1,
           toggle: false,
           allowMove: false,
         },
-
         on: {
           slideChangeTransitionEnd: function () {
             this.zoom.in();
           }
         },
-
       });
-
-
-
-
-
-
     </script>
-
-
-
   </div>
   <div class="booking">
     <div class="tittle_booking">
@@ -362,7 +324,6 @@
           <p class="features_item_text">Все карты оснащены кнопкой Reverse, которая активирует задний ход у болида</p>
         </h1>
       </div>
-
     </div>
     <div class="contacts">
       <div class="contact_info">
