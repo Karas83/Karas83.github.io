@@ -211,10 +211,19 @@
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+      
+      var slidesNumber=3;
+
+      if(window.matchMedia('(max-width: 600px)').matches){
+      	var slidesNumber=1;
+      }
+
+
+      
       var swiper = new Swiper(".mySwiper", {
         centeredSlides: true,
         zoom: true,
-        slidesPerView: 3,
+        slidesPerView: slidesNumber,
         spaceBetween: 30,
         slidesPerGroup: 1,
         loop: true,
