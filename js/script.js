@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
     btn3.addEventListener('click', function () {
         modal3.show();
     });
-    $("#myModal1, #myModal2, #myModal3").on('hidden.bs.modal', function () {
-        alert("Спасибо, ожидайте звонка оператора");
+    $("#myModal1, #myModal2, #myModal3").on('hidden.bs.modal', function (e) {
+        alert("Спасибо, ожидайте звонок оператора!!!");
     });
 
 });

@@ -697,6 +697,9 @@ body {
     .map_content{
         width: 300px;
     }
+    .hide{
+        display: hide;
+    }
     .features_item_text p{
         width: auto;
         padding: 10px;
@@ -735,6 +738,9 @@ body {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .hide{
+        display: none;
     }
 
 
